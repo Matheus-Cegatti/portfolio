@@ -10,11 +10,25 @@ body{
 
 .cabecalho-principal{
     height: 15rem;
-    border-bottom: 5px blue solid;
+    border-bottom: 3.5px blue solid;
+}
+
+.cabecalho-img {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-icon i:first-child {
+   margin-right: 6.5rem;
+   margin-left: 1.5rem;
 }
 
 .img-perfil{
     border: 5px blue solid;
     border-radius: 50%;
     width: 10%;
+}
+
+i{
+    color:#dee2e7;
 }

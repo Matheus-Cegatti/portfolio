@@ -4,8 +4,10 @@ let i = 0;
 let m = 0;
 let fraseAtual = [];
 let deletando = false;
+let fim = false
 
 function escrevendo() {
+    fim = false
     textoTecnologia.innerHTML = fraseAtual.join('');
 
     if(i < frases.length) {
@@ -22,6 +24,7 @@ function escrevendo() {
         }
 
         if(m==frases[i].length){
+            fim = true
             deletando = true
         }
 
@@ -34,7 +37,10 @@ function escrevendo() {
             }
         }
     }
-    setTimeout(escrevendo, 500)
+    const velocidadeSubindo = Math.random() * (80-50)+50
+    const velocidadeNormal = Math.random() * (300 -200) + 200
+    const tempo = fim? 2000 : deletando ? velocidadeSubindo : velocidadeNormal
+    setTimeout(escrevendo, tempo)
 }
 
 escrevendo()

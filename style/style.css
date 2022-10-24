@@ -6,7 +6,9 @@
 
 body{
     background-color: var(--body);
-    color: azure;
+    color: #F5F2E7;
+    font-family: 'Prompt', sans-serif;
+    font-size: 1rem;
 }
 
 .cabecalho-principal{
@@ -43,6 +45,17 @@ i{
     display: inline-block;
 }
 
+.texto-tecnologias{
+    color: #2666CF;
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
+.texto-tecnologias::after{
+    content:"|";
+    opacity: 1;
+    animation: cursor .7s infinite;
+}
 
 
 @keyframes animacao-mao {
@@ -75,5 +88,14 @@ i{
 
     100% {
         transform: rotate(0deg);
+    }
+}
+
+@keyframes cursor {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
     }
 }

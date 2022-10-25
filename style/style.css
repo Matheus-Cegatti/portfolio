@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    z-index: 2;
+
 }
 
 body{
@@ -14,6 +16,7 @@ body{
 .cabecalho-principal{
     height: 15rem;
     border-bottom: 3.5px blue solid;
+ 
 }
 
 .cabecalho-img {
@@ -36,6 +39,15 @@ i{
     color:#dee2e7;
 }
 
+.apresentacao {
+    margin-left: 4rem;
+}
+
+.apresentacao-inicial {
+    display: flex;
+    align-items: center;
+   
+}
 .wave {
     font-size: 2.4rem;
     animation-name: animacao-mao;
@@ -43,6 +55,12 @@ i{
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.apresentacao-imagem{
+    display: flex;
+    justify-content: space-between;
 }
 
 .texto-tecnologias{
@@ -57,6 +75,11 @@ i{
     animation: cursor .7s infinite;
 }
 
+.homem-computador{
+    width: 20%;
+    margin-right: 3rem;
+    margin-top: -2.3rem;
+}
 
 @keyframes animacao-mao {
     0% {

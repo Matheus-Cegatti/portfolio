@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    z-index: 2;
 
 }
 
@@ -37,6 +36,18 @@ body{
 
 i{
     color:#dee2e7;
+}
+
+.links-sobre {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+a {
+    color: white;
+    margin-right: 2rem;
+    margin-top: -7rem;
 }
 
 .apresentacao {

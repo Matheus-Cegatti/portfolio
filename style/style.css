@@ -13,8 +13,9 @@ body{
 }
 
 .cabecalho-principal{
-    height: 15rem;
-    border-bottom: 3.5px blue solid;
+    height: 4rem;
+    /* border-bottom: 3.5px var(--borda-cabecalho) solid; */
+    background: linear-gradient(49deg, rgba(25,25,25,1) 42%, rgba(57,91,100,1) 85%);
  
 }
 
@@ -28,30 +29,50 @@ body{
    margin-left: 1.5rem;
 }
 
-.img-perfil{
-    border: 5px blue solid;
-    border-radius: 50%;
-    width: 10%;
-}
-
 i{
     color:#dee2e7;
 }
 
 .links-sobre {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
+    height: 4rem;
+    
 }
 
-a {
+a{
     color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+a:not(:nth-child(3)){
     margin-right: 2rem;
-    margin-top: -7rem;
+}
+
+a::after{
+content: "";
+  position: relative;
+  display: block;
+  height: 5px;
+  width: 0;
+  border-radius: 7px;
+  background: var(--borda-cabecalho);
+  bottom: 1px;
+  left: 0;
+  transition: all 0.6s ease-out 0s;
+}
+
+a:hover::after{
+    /* transform-origin: left;
+    transform: scaleX(1); */
+    width: 100%;
 }
 
 .apresentacao {
     margin-left: 4rem;
+    margin-top: 3.2rem;
 }
 
 .apresentacao-inicial {
@@ -90,6 +111,28 @@ a {
     width: 20%;
     margin-right: 3rem;
     margin-top: -2.3rem;
+}
+
+.perfil-sobre {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.perfil-texto {
+    flex: 0 0 auto;
+    width: 60.66%;
+}
+
+.perfil-imagem {
+    flex: 0 0 auto;
+    width: 30.33%;
+}
+
+.img-perfil{
+    border: 2px blue solid;
+    border-radius: 50%;
+    width: 50%;
+    margin-left: 2.2rem;
 }
 
 @keyframes animacao-mao {

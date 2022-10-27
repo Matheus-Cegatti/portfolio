@@ -129,10 +129,21 @@ a:hover::after{
 }
 
 .img-perfil{
-    border: 2px blue solid;
+    /* border: 2px blue solid; */
     border-radius: 50%;
     width: 50%;
     margin-left: 2.2rem;
+}
+
+
+.img-perfil:hover {
+    opacity: 0.7;
+    box-shadow:
+    3px 3px #F5F5F5,
+    5px 5px #16213E,
+    5px 5px #16213E;
+-webkit-transform: translateX(-5px);
+transform: translateX(-5px);
 }
 
 @keyframes animacao-mao {

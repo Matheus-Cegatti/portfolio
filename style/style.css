@@ -116,6 +116,7 @@ a:hover::after{
 .perfil-sobre {
     display: flex;
     flex-wrap: wrap;
+    height: 50vh;
 }
 
 .perfil-texto {
@@ -144,6 +145,16 @@ a:hover::after{
     5px 5px #16213E;
 -webkit-transform: translateX(-5px);
 transform: translateX(-5px);
+}
+
+.rodape {
+    background: linear-gradient(49deg, rgba(25,25,25,1) 42%, rgba(57,91,100,1) 85%);
+    padding: 1rem;
+}
+
+.texto-rodape {
+    text-align: center;
+    /* margin-top: 5rem; */
 }
 
 @keyframes animacao-mao {
